@@ -23,5 +23,11 @@
   "homepage": "https://github.com/fiveisprime/sha-stream",
   "dependencies": {
     "readable-stream": "~1.0.27-1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "istanbul": "^0.2.7",
+    "jshint": "^2.5.0",
+    "mocha": "^1.18.2"
   }
 }
