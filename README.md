@@ -1,4 +1,4 @@
-sha-stream
+sha-stream [![Build Status](https://travis-ci.org/fiveisprime/sha-stream.svg?branch=master)](https://travis-ci.org/salem-cs/server) [![NPM version](https://badge.fury.io/js/sha-stream.svg)](http://badge.fury.io/js/sha-stream)
 ==========
 
 Create SHA hashes using streams.
