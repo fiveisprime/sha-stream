@@ -8,7 +8,10 @@ Create SHA hashes using streams.
 Pipe string data to sha-stream and get a hash using the specified algorithm.
 
 ```js
-require('fs').createReadStream('file.txt').pipe(require('sha-stream')('sha1')).pipe(process.stdout);
+require('fs')
+  .createReadStream('file.txt')
+  .pipe(require('sha-stream')('sha1'))
+  .pipe(process.stdout);
 ```
 
 # License
