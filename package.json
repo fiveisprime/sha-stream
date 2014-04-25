@@ -1,0 +1,27 @@
+{
+  "name": "sha-stream",
+  "version": "0.0.0",
+  "description": "Create SHA hashes using streams.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fiveisprime/sha-stream.git"
+  },
+  "keywords": [
+    "sha",
+    "stream",
+    "transform"
+  ],
+  "author": "Matt Hernandez <matt@modulus.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fiveisprime/sha-stream/issues"
+  },
+  "homepage": "https://github.com/fiveisprime/sha-stream",
+  "dependencies": {
+    "readable-stream": "~1.0.27-1"
+  }
+}
