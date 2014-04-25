@@ -1,6 +1,6 @@
 {
   "name": "sha-stream",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Create SHA hashes using streams.",
   "main": "index.js",
   "scripts": {
