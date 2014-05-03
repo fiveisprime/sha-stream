@@ -1,3 +1,9 @@
+//
+//     Sha-Stream
+//     Copyright(c) 2014 Matt Hernandez <matt@modulus.io>
+//     MIT Licensed
+//
+
 /* jshint newcap: false */
 
 var ShaSum = require('../');
