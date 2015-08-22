@@ -1,23 +1,23 @@
-//
-//     Sha-Stream
-//     Copyright(c) 2014 Matt Hernandez <matt@modulus.io>
-//     MIT Licensed
-//
-
-/* jshint newcap: false */
+var Lab = require('lab');
+var Code = require('code');
 
 var ShaSum = require('../');
 var Stream = require('readable-stream');
 var Transform = require('readable-stream').Transform;
 
-require('chai').should();
+var lab = exports.lab = Lab.script();
+
+var describe = lab.describe;
+var it = lab.it;
 
 describe('initialization', function () {
-  it('should initialize', function () {
+  it('should initialize', function (done) {
     var sha = new ShaSum('sha1');
 
-    sha.should.exist;
-    sha.should.be.instanceof(Transform);
+    Code.expect(sha).to.exist();
+    Code.expect(sha).to.be.instanceOf(Transform);
+
+    done();
   });
 
   it('should transform a string when called with new', function (done) {
@@ -34,7 +34,7 @@ describe('initialization', function () {
     });
 
     s.on('end', function () {
-      out.should.equal('9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08');
+      Code.expect(out).to.equal('9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08');
 
       done();
     });
@@ -53,7 +53,7 @@ describe('initialization', function () {
     });
 
     s.on('end', function () {
-      out.should.equal('a94a8fe5ccb19ba61c4c0873d391e987982fbbd3');
+      Code.expect(out).to.equal('a94a8fe5ccb19ba61c4c0873d391e987982fbbd3');
 
       done();
     });

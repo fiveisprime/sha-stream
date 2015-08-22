@@ -1,9 +1,3 @@
-//
-//     Sha-Stream
-//     Copyright(c) 2014 Matt Hernandez <matt@modulus.io>
-//     MIT Licensed
-//
-
 var Transform = require('readable-stream').Transform;
 var crypto    = require('crypto');
 var util      = require('util');
